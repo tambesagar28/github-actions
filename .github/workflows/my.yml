@@ -1,0 +1,12 @@
+name: my-first-workflow
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Single Line command
+        run: echo "Hello World"
+      - name: Multi line command
+        run : |
+          echo "Another line in command"
+          echo "with bye"
