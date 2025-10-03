@@ -20,6 +20,7 @@ jobs:
       - name: Run Test
         run: npm test
   Deploy:
+    needs: Test
     runs-on: ubuntu-latest
     steps:
       - name: checkout
