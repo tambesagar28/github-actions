@@ -1,8 +1,10 @@
 name: Output Informtaion
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    - master
 jobs:
   Information:
     runs-on: ubuntu-latest
     steps:
       - name: Infomation About the Github Runner
-        run: echo "${{toJASON(github)}}"
+        run: echo "${{toJSON(github)}}"
